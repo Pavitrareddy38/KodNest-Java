@@ -26,6 +26,8 @@ public class Main4 {
         System.out.println("Completed Sessions: " + completedSessions);
         if (completedSessions == 7) {
             System.out.println("Target Achieved");
+        } else {
+            System.out.println("Target Pending");
         }
 
     }
