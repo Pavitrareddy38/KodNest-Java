@@ -8,8 +8,8 @@ public class Pgm4 {
         System.out.println("Reading count: " + a.length);
         System.out.println("Before correction: " + a[correctionIndex]);
         a[correctionIndex] += correction;
-        System.out.println("After correction: " + a[correctionIndex]]);
-        System.out.println("Last index: " + ((a.length-1));
+        System.out.println("After correction: " + a[correctionIndex]);
+        System.out.println("Last index: " + (a.length - 1));
 
     }
 }
