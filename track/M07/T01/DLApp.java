@@ -6,7 +6,7 @@ public class DLApp {
         d.takeUserAge();
         try {
             d.verify();
-        } catch (Exception e) {
+        } catch (UnderAgeException | OverAgeException e) {
             e.printStackTrace();
             System.out.println("Exception Handled");
         }

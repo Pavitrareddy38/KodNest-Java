@@ -11,14 +11,17 @@ class DrivingLicense {
         age = sc.nextInt();
     }
 
-    void verify() throws UnderAgeException {
+    void verify() throws UnderAgeException, OverAgeException {
         if (age < 18) {
             // UnderAgeException uae = new UnderAgeException();
             // throw uae;
             throw new UnderAgeException();
-            
+
+        } else if (age > 65) {
+            throw new OverAgeException();
         } else {
             System.out.println("Driving license is issued...");
         }
     }
+
 }
